@@ -5,8 +5,6 @@
 This is the final code of the tutorial series 
 [Discover Python and Patterns](https://www.patternsgameprog.com/series/discover-python-and-patterns/).
 
-![](https://www.patternsgameprog.com/wp-content/uploads/2020/05/27_audio.mp4)
-
 # Requirements
 
  - Anaconda with Python 3: https://www.anaconda.com/distribution/#download-section
