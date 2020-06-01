@@ -36,6 +36,7 @@ class MenuGameMode(GameMode):
         # Font
         self.titleFont = pygame.font.Font("assets/ui/BD_Cartoon_Shout.ttf", 72)
         self.itemFont = pygame.font.Font("assets/ui/BD_Cartoon_Shout.ttf", 48)
+        self.smallFont = pygame.font.Font("assets/ui/BD_Cartoon_Shout.ttf", 18)
         
         # Menu items
         self.menuItems = [
@@ -63,6 +64,17 @@ class MenuGameMode(GameMode):
             surface = self.itemFont.render(item['title'], True, (200, 0, 0))
             self.menuWidth = max(self.menuWidth, surface.get_width())
             item['surface'] = surface        
+            
+        # Links surfaces
+        self.linkSurface1 = self.smallFont.render(
+            'Step-by-step creation of this game in the "Discover Python and Patterns" series:',
+            True, (200, 0, 0)
+        )
+        self.linkSurface2 = self.smallFont.render(
+            'https://www.patternsgameprog.com/series/discover-python-and-patterns/',
+            True, (200, 0, 0)
+        )
+
         
         self.currentMenuItem = 0
         self.menuCursor = pygame.image.load("assets/ui/cursor.png")        
@@ -115,3 +127,15 @@ class MenuGameMode(GameMode):
                 window.blit(self.menuCursor, (cursorX, cursorY))
             
             y += (120 * surface.get_height()) // 100      
+            
+        # Tutorial link
+        y = window.get_height() - 3 * (120 * self.linkSurface1.get_height()) // 100
+          
+        x = (window.get_width() - self.linkSurface1.get_width()) // 2
+        window.blit(self.linkSurface1, (x, y))
+        y += (120 * self.linkSurface1.get_height()) // 100      
+
+        x = (window.get_width() - self.linkSurface2.get_width()) // 2
+        window.blit(self.linkSurface2, (x, y))
+        y += (120 * self.linkSurface2.get_height()) // 100      
+         

@@ -23,7 +23,10 @@ In anaconda prompt:
 
 The python code (.py files) and levels (.tmx files) are under MIT license (see LICENSE file).
 
-The other files in the "assets" folder have the following licenses:
+The other files in the "assets" folder are the property of their respective authors 
+and have the following licenses:
+
+**I didn't find the author of some files, please create an *Issue* so I can credit everyone!**
 
 ## Font
 
@@ -63,6 +66,7 @@ The other files in the "assets" folder have the following licenses:
 	+ License: Attribution-NonCommercial 3.0 Unported (CC BY-NC 3.0) (https://creativecommons.org/licenses/by-nc/3.0/)
 	
 ## Music
+
   * Gang war:
 	+ File: 17718_1462204250.mp3
 	+ Author: Not found
